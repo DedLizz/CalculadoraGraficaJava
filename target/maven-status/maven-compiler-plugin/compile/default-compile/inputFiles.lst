@@ -1,4 +1,8 @@
-/home/brandon/NetBeansProjects/PrimeraPractica/src/main/java/main/Main.java
-/home/brandon/NetBeansProjects/PrimeraPractica/src/main/java/ui/CalculadoraGUI.java
-/home/brandon/NetBeansProjects/PrimeraPractica/src/main/java/ui/PanelCalculadora.java
-/home/brandon/NetBeansProjects/PrimeraPractica/src/main/java/ui/TecladoCalculadora.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/logic/Operaciones.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/main/Main.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/ui/CalculadoraGUI.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/ui/PanelCalculadora.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/ui/TecladoCalculadora.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/utils/ComunicadorTeclado.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/utils/Paneles.java
+/home/brandon/Proyectos/ProyectosJavaNet/CalculadoraGraficaJava/src/main/java/utils/Validacion.java

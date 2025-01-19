@@ -23,6 +23,8 @@ public class Main {
         CalculadoraGUI ventanaCarga = new CalculadoraGUI();
         
         // hacer visible la interfaz
+        ventanaCarga.setLocationRelativeTo(null);
+        ventanaCarga.setResizable(false);  // Desactiva la posibilidad de redimensionar la ventana
         ventanaCarga.setVisible(true);
         
         //crear un temporizador para separar 5 segundos (5000 milisegundos)
@@ -35,6 +37,8 @@ public class Main {
         ventanaCalculadora.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // Asegura que la aplicación se cierre al cerrar la ventana
         ventanaCalculadora.add(panelCalculadora);  // Agrega el PanelCalculadora al JFrame
         ventanaCalculadora.pack();  // Ajusta el tamaño del JFrame para que se ajuste al tamaño del panel
+        ventanaCalculadora.setLocationRelativeTo(null);  // Centra el JFrame en la pantalla
+        ventanaCalculadora.setResizable(false);  // Desactiva la posibilidad de redimensionar la ventana
         ventanaCalculadora.setVisible(true);  // Muestra la ventana
         });
         

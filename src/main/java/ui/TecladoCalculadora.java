@@ -4,6 +4,8 @@
  */
 package ui;
 
+import utils.ComunicadorTeclado;
+
 /**
  *
  * @author brandon
@@ -27,48 +29,99 @@ public class TecladoCalculadora extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tresbnt = new javax.swing.JButton();
+        seisbnt = new javax.swing.JButton();
+        cuatrobtn = new javax.swing.JButton();
+        cincobtn = new javax.swing.JButton();
+        sietebnt = new javax.swing.JButton();
+        unobtn = new javax.swing.JButton();
+        nuevebtn = new javax.swing.JButton();
+        ochobtn = new javax.swing.JButton();
+        cerobnt = new javax.swing.JButton();
+        dos = new javax.swing.JButton();
 
+        jPanel1.setBackground(new java.awt.Color(0, 51, 153));
         jPanel1.setForeground(new java.awt.Color(0, 51, 153));
 
-        jButton3.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton3.setText("3");
+        tresbnt.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        tresbnt.setText("3");
+        tresbnt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tresbntActionPerformed(evt);
+            }
+        });
 
-        jButton4.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton4.setText("6");
+        seisbnt.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        seisbnt.setText("6");
+        seisbnt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seisbntActionPerformed(evt);
+            }
+        });
 
-        jButton5.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton5.setText("4");
+        cuatrobtn.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        cuatrobtn.setText("4");
+        cuatrobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cuatrobtnActionPerformed(evt);
+            }
+        });
 
-        jButton6.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton6.setText("5");
+        cincobtn.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        cincobtn.setText("5");
+        cincobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cincobtnActionPerformed(evt);
+            }
+        });
 
-        jButton7.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton7.setText("7");
+        sietebnt.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        sietebnt.setText("7");
+        sietebnt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sietebntActionPerformed(evt);
+            }
+        });
 
-        jButton1.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton1.setText("1");
+        unobtn.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        unobtn.setText("1");
+        unobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                unobtnActionPerformed(evt);
+            }
+        });
 
-        jButton8.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton8.setText("9");
+        nuevebtn.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        nuevebtn.setText("9");
+        nuevebtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nuevebtnActionPerformed(evt);
+            }
+        });
 
-        jButton9.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton9.setText("8");
+        ochobtn.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        ochobtn.setText("8");
+        ochobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ochobtnActionPerformed(evt);
+            }
+        });
 
-        jButton10.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton10.setText("0");
+        cerobnt.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        cerobnt.setText("0");
+        cerobnt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerobntActionPerformed(evt);
+            }
+        });
 
-        jButton2.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
-        jButton2.setText("2");
+        dos.setFont(new java.awt.Font("Noto Serif Thin", 3, 48)); // NOI18N
+        dos.setText("2");
+        dos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,26 +131,26 @@ public class TecladoCalculadora extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(unobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(dos, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(tresbnt, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cuatrobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cincobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(seisbnt, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(sietebnt, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cerobnt, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ochobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(nuevebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -105,21 +158,21 @@ public class TecladoCalculadora extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(unobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tresbnt, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cuatrobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cincobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(seisbnt, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sietebnt, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ochobtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nuevebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton10)
+                .addComponent(cerobnt)
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
@@ -135,18 +188,58 @@ public class TecladoCalculadora extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void unobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unobtnActionPerformed
+        ComunicadorTeclado.agregarTexto("1");
+    }//GEN-LAST:event_unobtnActionPerformed
+
+    private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
+        ComunicadorTeclado.agregarTexto("2");
+    }//GEN-LAST:event_dosActionPerformed
+
+    private void tresbntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresbntActionPerformed
+        ComunicadorTeclado.agregarTexto("3");
+    }//GEN-LAST:event_tresbntActionPerformed
+
+    private void cuatrobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuatrobtnActionPerformed
+        ComunicadorTeclado.agregarTexto("4");
+    }//GEN-LAST:event_cuatrobtnActionPerformed
+
+    private void cincobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincobtnActionPerformed
+        ComunicadorTeclado.agregarTexto("5");
+    }//GEN-LAST:event_cincobtnActionPerformed
+
+    private void seisbntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisbntActionPerformed
+        ComunicadorTeclado.agregarTexto("6");
+    }//GEN-LAST:event_seisbntActionPerformed
+
+    private void sietebntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sietebntActionPerformed
+        ComunicadorTeclado.agregarTexto("7");
+    }//GEN-LAST:event_sietebntActionPerformed
+
+    private void ochobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochobtnActionPerformed
+        ComunicadorTeclado.agregarTexto("8");
+    }//GEN-LAST:event_ochobtnActionPerformed
+
+    private void nuevebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevebtnActionPerformed
+        ComunicadorTeclado.agregarTexto("9");
+    }//GEN-LAST:event_nuevebtnActionPerformed
+
+    private void cerobntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerobntActionPerformed
+        ComunicadorTeclado.agregarTexto("0");
+    }//GEN-LAST:event_cerobntActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton cerobnt;
+    private javax.swing.JButton cincobtn;
+    private javax.swing.JButton cuatrobtn;
+    private javax.swing.JButton dos;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton nuevebtn;
+    private javax.swing.JButton ochobtn;
+    private javax.swing.JButton seisbnt;
+    private javax.swing.JButton sietebnt;
+    private javax.swing.JButton tresbnt;
+    private javax.swing.JButton unobtn;
     // End of variables declaration//GEN-END:variables
 }

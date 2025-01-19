@@ -322,6 +322,7 @@ public class PanelCalculadora extends javax.swing.JPanel {
 
             TEXFIEL.setText(String.valueOf(resultado));
             operacionSeleccionada = false;
+            operador = "";
             
         }
         
